@@ -1,0 +1,53 @@
+.weather {
+  min-height: calc(100vh - 25px);
+  background-color: rgb(13, 2, 49);
+  text-align: center;
+  color: white;
+  padding-top: 50px;
+
+  p {
+    margin-bottom: 50px;
+    &.main-text {
+      font-size: 3em;
+      margin-top: 20px;
+      font-weight: 800;
+    }
+
+    &.secondary-text {
+      font-size: 2em;
+      margin-top: 0;
+      opacity: 0.5;
+    }
+  }
+
+  form {
+    margin-bottom: 100px;
+    input {
+      height: 30px;
+      min-width: 10%;
+
+      &[type="text"] {
+        width: 40%;
+        font-size: 20px;
+      }
+
+      &[type="submit"] {
+        background-color: rgb(37, 163, 221);
+        color: white;
+        border: rgb(37, 163, 221);
+        height: 36px;
+        position: relative;
+        top: -2px;
+        font-weight: 800;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .weather-data {
+    color: yellow;
+    font-weight: 800;
+  }
+}
